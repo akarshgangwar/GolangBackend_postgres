@@ -22,6 +22,8 @@ func main() {
 	router.POST("/signup", func(c *gin.Context) {
 		handlers.SignupHandler(c, db)
 	})
+	router.GET("/refresh-token", handlers.RefreshTokenHandler)
+
 
 	router.Run("localhost:8180")
 }

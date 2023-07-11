@@ -2,9 +2,10 @@ package middlewares
 
 import (
 	"net/http"
-	"github.com/gin-gonic/gin"
+
 	"github.com/akarshgangwar/GolangBackend_postgres/models"
 	"github.com/dgrijalva/jwt-go"
+	"github.com/gin-gonic/gin"
 )
 
 var jwtKey = []byte("AK")
